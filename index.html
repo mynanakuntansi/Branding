@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio | Professional Accountant & Educator</title>
+    
+    <!-- SEO & GitHub Pages Meta Tags -->
+    <meta name="description" content="Portofolio Profesional Akuntan, Analis Keuangan, dan Edukator Akuntansi Digital. Menyediakan informasi kompetensi PSAK/IFRS, Brevet Pajak, Audit, dan LMS Pendidikan.">
+    <meta name="keywords" content="Akuntansi, Financial Educator, Brevet Pajak, PSAK, Financial Modeling, LMS Akuntansi, Portofolio Akuntan">
+    <meta name="author" content="Pratama Yoga, S.Ak.">
+    <meta property="og:title" content="My Personal Portfolio | Professional Accountant & Educator">
+    <meta property="og:description" content="Portofolio Digital & Personal Branding Akuntansi, Financial Strategy, dan Inovasi Edukasi.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon (Inline SVG Data URL) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230284c7'/><text x='50' y='65' font-size='50' font-weight='bold' text-anchor='middle' fill='white' font-family='sans-serif'>AP</text></svg>">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6 Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#060e1a'
+                        },
+                        electric: {
+                            400: '#38bdf8',
+                            500: '#0284c7',
+                            600: '#0284c7',
+                            700: '#0369a1'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Modern Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.8);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0284c7;
+        }
+
+        /* Glassmorphism Surface Effects */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .dark .glass-card {
+            background: rgba(15, 23, 42, 0.80);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(30, 41, 59, 0.7);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px);
+        }
+        .dark .glass-nav {
+            background: rgba(6, 14, 26, 0.90);
+            backdrop-filter: blur(16px);
+        }
+
+        /* Text Gradient Accent */
+        .gradient-text {
+            background: linear-gradient(135deg, #0284c7 0%, #38bdf8 50%, #0284c7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Clean Print Style Sheet for Digital CV */
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+            .no-print, nav, footer, #theme-toggle, #edit-profile-btn, #back-to-top, .action-buttons, #toast-container {
+                display: none !important;
+            }
+            .glass-card {
+                border: none !important;
+                box-shadow: none !important;
+                background: #ffffff !important;
+            }
+            main {
+                padding-top: 0 !important;
+            }
+            #cv {
+                padding-top: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-navy-950 text-slate-800 dark:text-slate-100 font-sans antialiased transition-colors duration-300 min-h-screen flex flex-col justify-between">
+
+    <!-- ================= TOP NAVIGATION BAR ================= -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-nav border-b border-slate-200/80 dark:border-navy-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-navy-900 via-electric-600 to-electric-400 flex items-center justify-center text-white font-extrabold text-lg shadow-md group-hover:scale-105 transition-transform">
+                    AP
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg tracking-tight text-slate-900 dark:text-white leading-tight">
+                        AP<span class="text-electric-500">.Portfolio</span>
+                    </span>
+                    <span class="text-[10px] text-slate-500 dark:text-slate-400 font-medium tracking-wide">Accounting & Financial Education</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden lg:flex items-center space-x-1 xl:space-x-2 text-xs font-semibold">
+                <a href="#home" class="px-3 py-2 rounded-lg hover:text-electric-500 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition">Home</a>
+                <a href="#about" class="px-3 py-2 rounded-lg hover:text-electric-500 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition">About</a>
+                <a href="#skills" class="px-3 py-2 rounded-lg hover:text-electric-500 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition">Skills</a>
+                <a href="#portfolio" class="px-3 py-2 rounded-lg hover:text-electric-500 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition">Portfolio</a>
+                <a href="#achievements" class="px-3 py-2 rounded-lg hover:text-electric-500 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition">Achievements</a>
+                <a href="#academic" class="px-3 py-2 rounded-lg hover:text-electric-500 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition">Academic Corner</a>
+                <a href="#cv" class="px-3 py-2 rounded-lg hover:text-electric-500 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition">CV / Resume</a>
+                <a href="#contact" class="px-3 py-2 rounded-lg hover:text-electric-500 hover:bg-slate-100 dark:hover:bg-navy-800/60 transition">Contact</a>
+            </div>
+
+            <!-- Quick Action Controls -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <!-- Profile Customizer Modal Launcher -->
+                <button id="edit-profile-btn" onclick="openProfileModal()" class="px-3 py-2 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/30 text-xs font-semibold transition flex items-center gap-1.5" title="Edit Data Profil Website">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span class="hidden sm:inline">Edit Profil</span>
+                </button>
+
+                <!-- Light/Dark Theme Switcher -->
+                <button id="theme-toggle" aria-label="Toggle Theme" class="p-2.5 rounded-xl bg-slate-200/80 dark:bg-navy-800 text-slate-700 dark:text-amber-400 hover:scale-105 transition shadow-sm">
+                    <i id="theme-icon" class="fa-solid fa-moon text-sm"></i>
+                </button>
+
+                <!-- Contact CTA Button -->
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-electric-600 hover:bg-electric-500 text-white font-semibold text-xs tracking-wide shadow-md transition">
+                    <span>Hubungi Saya</span>
+                    <i class="fa-solid fa-paper-plane text-[10px]"></i>
+                </a>
+
+                <!-- Mobile Navigation Menu Toggle Button -->
+                <button id="mobile-menu-btn" aria-label="Open Navigation" class="lg:hidden p-2.5 rounded-xl bg-slate-200/80 dark:bg-navy-800 text-slate-700 dark:text-slate-200">
+                    <i class="fa-solid fa-bars text-base"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation Overlay -->
+        <div id="mobile-drawer" class="lg:hidden hidden border-t border-slate-200 dark:border-navy-800 bg-white dark:bg-navy-900 px-4 pt-3 pb-6 space-y-2 shadow-2xl">
+            <a href="#home" class="mobile-nav-item block px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-navy-800">Home</a>
+            <a href="#about" class="mobile-nav-item block px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-navy-800">About Me</a>
+            <a href="#skills" class="mobile-nav-item block px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-navy-800">Skills & Competencies</a>
+            <a href="#portfolio" class="mobile-nav-item block px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-navy-800">Portfolio & Projects</a>
+            <a href="#achievements" class="mobile-nav-item block px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-navy-800">Achievements</a>
+            <a href="#academic" class="mobile-nav-item block px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-navy-800">Academic Corner</a>
+            <a href="#cv" class="mobile-nav-item block px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-navy-800">CV & Resume</a>
+            <a href="#contact" class="mobile-nav-item block px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-navy-800">Contact Me</a>
+        </div>
+    </nav>
+
+
+    <!-- ================= MAIN CONTENT AREA ================= -->
+    <main class="flex-grow pt-24">
+
+        <!-- ===== SECTION 1: HOME / HERO ===== -->
+        <section id="home" class="min-h-[85vh] flex items-center justify-center relative py-12 lg:py-20 overflow-hidden">
+            <!-- Background Orbs -->
+            <div class="absolute top-1/4 -left-20 w-80 h-80 bg-electric-500/10 dark:bg-electric-500/15 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-10 -right-20 w-96 h-96 bg-cyan-500/10 dark:bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Column: Headline & Messaging -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        
+                        <!-- Status Badge -->
+                        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-electric-500/10 dark:bg-navy-800 text-electric-600 dark:text-electric-400 border border-electric-500/20 shadow-sm">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+                            <span>Accounting Professional & Educational Innovator</span>
+                        </div>
+
+                        <!-- Main Headline -->
+                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+                            Bridging <span class="gradient-text">Professional Accounting Standards</span>, Financial Strategy, and Digital Innovation.
+                        </h1>
+
+                        <!-- Personal Tagline & Profile Description -->
+                        <p id="disp-tagline" class="text-base sm:text-lg text-slate-700 dark:text-slate-200 font-semibold italic">
+                            "Precision Accounting, Financial Strategy, and Digital Learning Innovation"
+                        </p>
+                        <p id="disp-bio" class="text-xs sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                            Praktisi dan edukator akuntansi dengan spesialisasi pada pelaporan keuangan berbasis PSAK/IFRS, perpajakan, audit internal, serta perancangan media dan LMS digital interaktif untuk pendidikan kejuruan dan profesional.
+                        </p>
+
+                        <!-- CTA Action Buttons -->
+                        <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                            <a href="#portfolio" class="px-6 py-3.5 rounded-xl bg-electric-600 hover:bg-electric-500 text-white font-semibold text-xs sm:text-sm shadow-lg hover:shadow-electric-500/25 transition-all flex items-center gap-2">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Jelajahi Portofolio</span>
+                            </a>
+                            <a href="#cv" class="px-6 py-3.5 rounded-xl bg-slate-200/80 dark:bg-navy-800 hover:bg-slate-300 dark:hover:bg-navy-700 text-slate-800 dark:text-slate-200 font-semibold text-xs sm:text-sm transition flex items-center gap-2 border border-slate-300/60 dark:border-navy-700">
+                                <i class="fa-solid fa-file-arrow-down"></i>
+                                <span>Unduh CV</span>
+                            </a>
+                            <a href="#contact" class="px-6 py-3.5 rounded-xl border border-electric-500/40 text-electric-600 dark:text-electric-400 hover:bg-electric-500/10 font-semibold text-xs sm:text-sm transition flex items-center gap-2">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Hubungi Saya</span>
+                            </a>
+                        </div>
+
+                        <!-- Quick Metadata Footer -->
+                        <div class="pt-6 border-t border-slate-200 dark:border-navy-800 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-500 dark:text-slate-400">
+                            <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-electric-500"></i> <span id="disp-location">Yogyakarta, Indonesia</span></span>
+                            <span class="flex items-center gap-2"><i class="fa-solid fa-scale-balanced text-electric-500"></i> PSAK / Brevet Tax</span>
+                            <span class="flex items-center gap-2"><i class="fa-solid fa-laptop-code text-electric-500"></i> Financial Modeling & LMS</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Professional Avatar & Badge Layout -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative w-full max-w-sm">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-electric-600 to-indigo-600 rounded-3xl blur-lg opacity-40 dark:opacity-60"></div>
+
+                            <div class="relative glass-card rounded-3xl p-6 shadow-2xl flex flex-col items-center text-center">
+                                
+                                <!-- Profile Avatar Frame Placeholder -->
+                                <div class="relative w-48 h-56 sm:w-52 sm:h-60 rounded-2xl overflow-hidden bg-slate-200 dark:bg-navy-900 border-2 border-electric-500/50 mb-5 shadow-inner flex items-center justify-center">
+                                    <svg class="w-full h-full text-slate-400 dark:text-navy-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                    </svg>
+                                    <div class="absolute bottom-2 left-2 right-2 px-2 py-1 bg-navy-950/80 backdrop-blur-md rounded-lg text-[10px] text-white font-medium">
+                                        Professional Profile
+                                    </div>
+                                </div>
+
+                                <h3 id="disp-name" class="font-bold text-lg text-slate-900 dark:text-white mb-0.5">Pratama Yoga, S.Ak.</h3>
+                                <p id="disp-title" class="text-xs font-semibold text-electric-600 dark:text-electric-400 mb-3">Professional Accountant & Financial Educator</p>
+
+                                <div class="w-full bg-slate-100 dark:bg-navy-900/80 rounded-xl p-3 text-xs text-slate-600 dark:text-slate-300 space-y-1.5 border border-slate-200 dark:border-navy-800">
+                                    <div class="flex justify-between">
+                                        <span class="text-slate-400">Spesialisasi:</span>
+                                        <span class="font-medium text-slate-800 dark:text-slate-200">Financial & Tax Reporting</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-slate-400">Status:</span>
+                                        <span class="font-medium text-emerald-600 dark:text-emerald-400">Terbuka untuk Kolaborasi</span>
+                                    </div>
+                                </div>
+
+                                <!-- Floating Glass Badges -->
+                                <div class="absolute top-4 -right-2 glass-card px-3 py-1.5 rounded-lg text-[10px] font-bold text-slate-800 dark:text-slate-200 shadow-md border border-electric-500/30 flex items-center gap-1">
+                                    <i class="fa-solid fa-calculator text-electric-500"></i> PSAK & Tax
+                                </div>
+                                <div class="absolute bottom-16 -left-3 glass-card px-3 py-1.5 rounded-lg text-[10px] font-bold text-slate-800 dark:text-slate-200 shadow-md border border-electric-500/30 flex items-center gap-1">
+                                    <i class="fa-solid fa-chart-line text-cyan-400"></i> Financial Strategy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 4 Core Functional Pillars -->
+                <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="glass-card p-5 rounded-2xl border-l-4 border-l-electric-600 hover:shadow-md transition">
+                        <div class="w-9 h-9 rounded-xl bg-blue-100 dark:bg-navy-800 text-electric-600 dark:text-electric-400 flex items-center justify-center text-base mb-3">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Financial Statements</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">Penyusunan Laporan Keuangan berbasis PSAK & IFRS secara presisi.</p>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl border-l-4 border-l-cyan-500 hover:shadow-md transition">
+                        <div class="w-9 h-9 rounded-xl bg-cyan-100 dark:bg-navy-800 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-base mb-3">
+                            <i class="fa-solid fa-receipt"></i>
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Tax Compliance</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">Rekonsiliasi fiskal, PPh 21/23/PPN, dan kepatuhan perpajakan.</p>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl border-l-4 border-l-indigo-500 hover:shadow-md transition">
+                        <div class="w-9 h-9 rounded-xl bg-indigo-100 dark:bg-navy-800 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-base mb-3">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Audit Readiness</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">Sistem pengendalian internal & penyiapan kertas kerja pemeriksaan.</p>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl border-l-4 border-l-emerald-500 hover:shadow-md transition">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-100 dark:bg-navy-800 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-base mb-3">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Digital Accounting LMS</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">Pengembangan media instruksional & sistem pembelajaran digital.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===== SECTION 2: ABOUT ME & PROFESSIONAL JOURNEY ===== -->
+        <section id="about" class="py-20 bg-slate-100/60 dark:bg-navy-900/40 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-electric-600 dark:text-electric-400 mb-2">Tentang Saya</h2>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                        Standardisasi Keuangan & Edukasi Modern
+                    </h3>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                        Kombinasi integritas akuntansi profesional dan inovasi metode pembelajaran digital.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-10 items-start">
+                    
+                    <!-- Left: Profile Summary & Values -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="glass-card p-6 rounded-3xl space-y-4">
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white border-b border-slate-200 dark:border-navy-800 pb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-id-card text-electric-500"></i> Profil & Ringkasan Karier
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                Memiliki latar belakang kuat dalam siklus akuntansi komprehensif, penyusunan laporan keuangan komersial dan fiskal, serta pengujian pengendalian internal. Berkomitmen menjembatani standar praktik industri dengan kurikulum pendidikan keuangan melalui pemanfaatan spreadsheet interaktif dan platform LMS.
+                            </p>
+                            
+                            <div class="space-y-3 text-xs pt-2">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-7 h-7 rounded-lg bg-blue-100 dark:bg-navy-800 text-electric-600 dark:text-electric-400 flex items-center justify-center shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-award"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-slate-800 dark:text-slate-200">Sertifikasi & Kualifikasi</div>
+                                        <div class="text-slate-500 dark:text-slate-400">Brevet Pajak A & B | Sertifikasi Teknisi Akuntansi Yunior</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <div class="w-7 h-7 rounded-lg bg-cyan-100 dark:bg-navy-800 text-cyan-600 dark:text-cyan-400 flex items-center justify-center shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-slate-800 dark:text-slate-200">Pendidikan Akademik</div>
+                                        <div class="text-slate-500 dark:text-slate-400">S1 Akuntansi / Pendidikan Akuntansi (IPK 3.85 / 4.00)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Core Values Grid -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="glass-card p-4 rounded-2xl text-center">
+                                <i class="fa-solid fa-shield text-xl text-electric-500 mb-2"></i>
+                                <h5 class="text-xs font-bold text-slate-800 dark:text-slate-200">Akurasi & Etika</h5>
+                                <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Kepatuhan ketat terhadap standar akuntansi dan kode etik.</p>
+                            </div>
+                            <div class="glass-card p-4 rounded-2xl text-center">
+                                <i class="fa-solid fa-lightbulb text-xl text-cyan-400 mb-2"></i>
+                                <h5 class="text-xs font-bold text-slate-800 dark:text-slate-200">Tranformasi Digital</h5>
+                                <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Otomasi laporan keuangan dan pembelajaran berbasis AI.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Timeline Professional Journey -->
+                    <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl">
+                        <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-timeline text-electric-500"></i> My Professional Journey
+                        </h4>
+
+                        <div class="relative border-l-2 border-slate-200 dark:border-navy-800 ml-3 space-y-8 pl-6">
+                            
+                            <!-- Item 1 -->
+                            <div class="relative group">
+                                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-electric-600 border-4 border-slate-100 dark:border-navy-950"></div>
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 dark:bg-navy-800 text-electric-600 dark:text-electric-400">2023 - Sekarang</span>
+                                <h5 class="text-sm font-bold text-slate-900 dark:text-white mt-1">Lead Content Developer & EdTech Specialist</h5>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Inisiatif Proyek AKUN LMS & Media Akuntansi Digital</p>
+                                <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                                    Memimpin perancangan kurikulum interaktif LMS untuk siswa SMK Akuntansi dan praktisi pemula. Mengembangkan instrumen otomatisasi penilaian dan lembar kerja jurnal umum.
+                                </p>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="relative group">
+                                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-cyan-500 border-4 border-slate-100 dark:border-navy-950"></div>
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-slate-200 dark:bg-navy-800 text-slate-700 dark:text-slate-300">2022 - 2023</span>
+                                <h5 class="text-sm font-bold text-slate-900 dark:text-white mt-1">Financial Statement Auditor Assistant / Intern</h5>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Kantor Akuntan Publik (KAP)</p>
+                                <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                                    Berpartisipasi dalam pengujian substantif atas saldo akun, verifikasi bukti transaksi, evaluasi pengendalian internal klien UMKM, serta perancangan kertas kerja pemeriksaan.
+                                </p>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="relative group">
+                                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-slate-100 dark:border-navy-950"></div>
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-slate-200 dark:bg-navy-800 text-slate-700 dark:text-slate-300">2021 - 2023</span>
+                                <h5 class="text-sm font-bold text-slate-900 dark:text-white mt-1">Asisten Laboratorium Akuntansi & Keuangan</h5>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Laboratorium Jurusan Akuntansi</p>
+                                <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                                    Membimbing praktikum mahasiswa pada mata kuliah Akuntansi Keuangan Menengah, Pengolahan Data Spreadsheet Finansial, dan Sistem Informasi Akuntansi.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===== SECTION 3: SKILLS & COMPETENCIES ===== -->
+        <section id="skills" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-electric-600 dark:text-electric-400 mb-2">Kompetensi Teknis</h2>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                        Pemetaan Keahlian Profesional Akuntansi
+                    </h3>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                        Keahlian terverifikasi dalam akuntansi keuangan, perpajakan, audit, instrumen spreadsheet, dan metode instruksional.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- 1. Financial & Corporate Accounting -->
+                    <div class="glass-card rounded-3xl p-6 border-t-4 border-t-blue-600 hover:shadow-xl transition">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-navy-800 text-electric-600 dark:text-electric-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-file-invoice"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base text-slate-900 dark:text-white">Financial Accounting</h4>
+                                <span class="text-[10px] text-slate-500 dark:text-slate-400">PSAK / IFRS Standards</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Siklus Akuntansi Komprehensif</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Jurnal Umum & Buku Besar Otomatis</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Laporan Keuangan 5 Pilar</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Akuntansi Biaya & Manajerial</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. Tax & Auditing -->
+                    <div class="glass-card rounded-3xl p-6 border-t-4 border-t-cyan-500 hover:shadow-xl transition">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-navy-800 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base text-slate-900 dark:text-white">Tax & Auditing</h4>
+                                <span class="text-[10px] text-slate-500 dark:text-slate-400">Kepatuhan & Pengendalian</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Perhitungan PPh 21/23/25 & PPN</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Konsep e-SPT & Rekonsiliasi Fiskal</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Kertas Kerja Audit (KKA)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Penilaian Pengendalian Internal</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. Spreadsheet & Financial Modeling -->
+                    <div class="glass-card rounded-3xl p-6 border-t-4 border-t-indigo-500 hover:shadow-xl transition">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-navy-800 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-table"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base text-slate-900 dark:text-white">Financial Modeling</h4>
+                                <span class="text-[10px] text-slate-500 dark:text-slate-400">Excel & Google Sheets</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Advanced Formula (VLOOKUP, INDEX MATCH)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Dynamic Financial Dashboards</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Power Query & Automasi Data</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Proyeksi Keuangan & Cash Flow Model</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. Educational Design -->
+                    <div class="glass-card rounded-3xl p-6 border-t-4 border-t-purple-500 hover:shadow-xl transition">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-purple-100 dark:bg-navy-800 text-purple-600 dark:text-purple-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-chalkboard"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base text-slate-900 dark:text-white">Educational Design</h4>
+                                <span class="text-[10px] text-slate-500 dark:text-slate-400">Instruksional & Pedagogi</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Rancangan LMS Akuntansi SMK</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> LKPD Digital Interaktif</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Strategi Gamifikasi Belajar</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Rubrik Asesmen Kompetensi</li>
+                        </ul>
+                    </div>
+
+                    <!-- 5. Digital Tools & AI Integration -->
+                    <div class="glass-card rounded-3xl p-6 border-t-4 border-t-emerald-500 hover:shadow-xl transition md:col-span-2 lg:col-span-2">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-navy-800 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base text-slate-900 dark:text-white">Digital Tools & AI Integration</h4>
+                                <span class="text-[10px] text-slate-500 dark:text-slate-400">Software Akuntansi & Pemanfaatan AI</span>
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-3 text-xs text-slate-600 dark:text-slate-300">
+                            <div class="p-3 bg-slate-50 dark:bg-navy-900/60 rounded-xl border border-slate-200 dark:border-navy-800">
+                                <strong class="text-slate-800 dark:text-slate-200 block mb-1">Accurate & MYOB Overview</strong>
+                                Pengoperasian modul penjualan, pembelian, persediaan, dan buku besar pada software akuntansi terpopuler.
+                            </div>
+                            <div class="p-3 bg-slate-50 dark:bg-navy-900/60 rounded-xl border border-slate-200 dark:border-navy-800">
+                                <strong class="text-slate-800 dark:text-slate-200 block mb-1">AI Prompt Engineering untuk Akuntansi</strong>
+                                Pemanfaatan LLM/AI untuk pembuatan kuis studi kasus, otomasi narasi ringkasan laporan, dan riset standar.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===== SECTION 4: PORTFOLIO & PROJECTS ===== -->
+        <section id="portfolio" class="py-20 bg-slate-100/60 dark:bg-navy-900/40 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-electric-600 dark:text-electric-400 mb-2">Portofolio Proyek</h2>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                        Dokumentasi Karya & Implementasi Sistem
+                    </h3>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                        Proyek pelaporan keuangan, dasbor perpajakan, platform LMS, dan model analisis.
+                    </p>
+                </div>
+
+                <!-- Filter Category Tabs -->
+                <div class="flex flex-wrap items-center justify-center gap-2 mb-10 text-xs">
+                    <button class="portfolio-filter-btn active px-4 py-2 rounded-xl bg-electric-600 text-white font-semibold transition" data-filter="all">Semua Proyek</button>
+                    <button class="portfolio-filter-btn px-4 py-2 rounded-xl bg-slate-200/80 dark:bg-navy-800 hover:bg-slate-300 dark:hover:bg-navy-700 text-slate-700 dark:text-slate-300 font-semibold transition" data-filter="Financial Accounting">Financial Accounting</button>
+                    <button class="portfolio-filter-btn px-4 py-2 rounded-xl bg-slate-200/80 dark:bg-navy-800 hover:bg-slate-300 dark:hover:bg-navy-700 text-slate-700 dark:text-slate-300 font-semibold transition" data-filter="Audit & Tax">Audit & Tax</button>
+                    <button class="portfolio-filter-btn px-4 py-2 rounded-xl bg-slate-200/80 dark:bg-navy-800 hover:bg-slate-300 dark:hover:bg-navy-700 text-slate-700 dark:text-slate-300 font-semibold transition" data-filter="Digital Learning Media">Digital Learning Media</button>
+                    <button class="portfolio-filter-btn px-4 py-2 rounded-xl bg-slate-200/80 dark:bg-navy-800 hover:bg-slate-300 dark:hover:bg-navy-700 text-slate-700 dark:text-slate-300 font-semibold transition" data-filter="Systems & Spreadsheets">Systems & Spreadsheets</button>
+                    <button class="portfolio-filter-btn px-4 py-2 rounded-xl bg-slate-200/80 dark:bg-navy-800 hover:bg-slate-300 dark:hover:bg-navy-700 text-slate-700 dark:text-slate-300 font-semibold transition" data-filter="Academic & Research">Academic & Research</button>
+                </div>
+
+                <!-- Projects Grid Container -->
+                <div id="projects-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- JavaScript Dynamic Rendering -->
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===== SECTION 5: ACHIEVEMENTS & CERTIFICATES ===== -->
+        <section id="achievements" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-electric-600 dark:text-electric-400 mb-2">Prestasi & Sertifikasi</h2>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                        Lisensi, Kelulusan, & Penghargaan
+                    </h3>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                        Bukti kualifikasi teknis dan pengakuan dalam bidang akuntansi dan pendidikan.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Cert 1 -->
+                    <div class="glass-card rounded-3xl p-5 hover:border-electric-500/50 transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-1 rounded text-[10px] font-bold bg-blue-100 dark:bg-navy-800 text-electric-600 dark:text-electric-400">Sertifikasi Perpajakan</span>
+                                <span class="text-[11px] text-slate-400">2023</span>
+                            </div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Brevet Pajak Terpadu A & B</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">Penyelenggara: Pusat Pelatihan Perpajakan</p>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                                Menyelesaikan pelatihan komprehensif mencakup PPh Orang Pribadi/Badan, PPN & PPnBM, e-Faktur, serta e-SPT.
+                            </p>
+                        </div>
+                        <button onclick="openCertModal('Brevet Pajak Terpadu A & B', 'Pusat Pelatihan Perpajakan', '2023', 'Lulus dengan kualifikasi Sangat Memuaskan pada pengujian PPh dan PPN.')" class="w-full py-2 rounded-xl bg-slate-100 dark:bg-navy-800 hover:bg-electric-600 hover:text-white text-xs font-semibold text-slate-700 dark:text-slate-200 transition text-center">
+                            <i class="fa-solid fa-eye mr-1.5"></i> Lihat Pratinjau
+                        </button>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="glass-card rounded-3xl p-5 hover:border-electric-500/50 transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-1 rounded text-[10px] font-bold bg-cyan-100 dark:bg-navy-800 text-cyan-600 dark:text-cyan-400">Sertifikasi Profesi</span>
+                                <span class="text-[11px] text-slate-400">2022</span>
+                            </div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Certified Accounting Technician (CAT) / Teknisi Akuntansi Yunior</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">Penyelenggara: Badan Nasional Sertifikasi Profesi (BNSP)</p>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                                Verifikasi kompetensi dalam memproses buku jurnal, mengelola buku besar, dan menyusun laporan keuangan.
+                            </p>
+                        </div>
+                        <button onclick="openCertModal('Certified Accounting Technician (CAT)', 'BNSP', '2022', 'Sertifikasi kompetensi nasional penyusunan laporan keuangan.')" class="w-full py-2 rounded-xl bg-slate-100 dark:bg-navy-800 hover:bg-electric-600 hover:text-white text-xs font-semibold text-slate-700 dark:text-slate-200 transition text-center">
+                            <i class="fa-solid fa-eye mr-1.5"></i> Lihat Pratinjau
+                        </button>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="glass-card rounded-3xl p-5 hover:border-electric-500/50 transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-1 rounded text-[10px] font-bold bg-purple-100 dark:bg-navy-800 text-purple-600 dark:text-purple-400">Kompetisi & Penghargaan</span>
+                                <span class="text-[11px] text-slate-400">2023</span>
+                            </div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Juara Lomba Karya Tulis Akuntansi Nasional</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">Penyelenggara: Asosiasi Pendidikan Akuntansi Indonesia</p>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                                Penghargaan atas riset pengembangan model LKPD Akuntansi berbasis teknologi interaktif.
+                            </p>
+                        </div>
+                        <button onclick="openCertModal('Juara Karya Tulis Akuntansi Nasional', 'Asosiasi Pendidikan Akuntansi', '2023', 'Penghargaan nasional inovasi media pembelajaran akuntansi.')" class="w-full py-2 rounded-xl bg-slate-100 dark:bg-navy-800 hover:bg-electric-600 hover:text-white text-xs font-semibold text-slate-700 dark:text-slate-200 transition text-center">
+                            <i class="fa-solid fa-eye mr-1.5"></i> Lihat Pratinjau
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===== SECTION 6: ACADEMIC CORNER & INSIGHTS ===== -->
+        <section id="academic" class="py-20 bg-slate-100/60 dark:bg-navy-900/40 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-electric-600 dark:text-electric-400 mb-2">Academic Corner</h2>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                        Financial Insights & Riset Pembelajaran
+                    </h3>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                        Kumpulan ulasan standar akuntansi, studi kasus perpajakan, dan inovasi pendidikan.
+                    </p>
+                </div>
+
+                <!-- Real-time Search Input -->
+                <div class="max-w-xl mx-auto mb-10">
+                    <div class="relative">
+                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                        <input type="text" id="article-search" placeholder="Cari topik PSAK, Audit, Perpajakan, atau Gamifikasi..." class="w-full pl-11 pr-4 py-3 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:border-electric-500 shadow-sm transition">
+                    </div>
+                </div>
+
+                <!-- Article Container -->
+                <div id="articles-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic rendering via JS -->
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===== SECTION 7: DIGITAL CV & RESUME ===== -->
+        <section id="cv" class="py-20 relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-12 no-print">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-electric-600 dark:text-electric-400 mb-2">Resume Digital</h2>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                        Curriculum Vitae Ringkas
+                    </h3>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                        Format standar profesional yang siap dicetak atau diunduh langsung sebagai dokumen PDF.
+                    </p>
+
+                    <div class="mt-6 flex justify-center gap-4">
+                        <button onclick="window.print()" class="px-6 py-3 rounded-xl bg-electric-600 hover:bg-electric-500 text-white font-semibold text-xs transition shadow-md flex items-center gap-2">
+                            <i class="fa-solid fa-print"></i> Cetak / Unduh CV (PDF)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Print-Ready CV Paper Frame -->
+                <div class="glass-card rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200 dark:border-navy-800 text-slate-800 dark:text-slate-200 space-y-8">
+                    
+                    <!-- Header -->
+                    <div class="border-b border-slate-200 dark:border-navy-800 pb-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                        <div>
+                            <h2 id="cv-disp-name" class="text-2xl font-extrabold text-slate-900 dark:text-white">Pratama Yoga, S.Ak.</h2>
+                            <p id="cv-disp-title" class="text-xs font-semibold text-electric-600 dark:text-electric-400">Professional Accountant & Financial Educator</p>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1"><i class="fa-solid fa-location-dot mr-1"></i> <span id="cv-disp-location">Yogyakarta, Indonesia</span></p>
+                        </div>
+                        <div class="text-xs text-slate-600 dark:text-slate-400 space-y-1">
+                            <div><i class="fa-solid fa-envelope mr-1.5 text-electric-500"></i> <span id="cv-disp-email">pratama.yoga@accounting.id</span></div>
+                            <div><i class="fa-brands fa-linkedin mr-1.5 text-electric-500"></i> <span id="cv-disp-linkedin">linkedin.com/in/pratamayoga-ak</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Summary -->
+                    <div class="space-y-2">
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white border-l-4 border-electric-500 pl-3">Ringkasan Profesional</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Praktisi Akuntansi dan Edukator bersertifikat Brevet Pajak A & B serta CAT. Berpengalaman dalam pelaporan keuangan PSAK, pengujian kertas kerja audit, dan perancangan media pembelajaran berbasis spreadsheet dan LMS.
+                        </p>
+                    </div>
+
+                    <!-- Work Experience -->
+                    <div class="space-y-3">
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white border-l-4 border-electric-500 pl-3">Pengalaman Kerja & Proyek</h3>
+                        
+                        <div class="space-y-3 text-xs">
+                            <div>
+                                <div class="flex justify-between font-bold text-slate-800 dark:text-slate-200">
+                                    <span>Lead Content Developer — AKUN LMS</span>
+                                    <span class="text-slate-400 font-normal">2023 - Sekarang</span>
+                                </div>
+                                <p class="text-slate-500 dark:text-slate-400 text-[11px]">Proyek EdTech Pendidikan Akuntansi</p>
+                                <ul class="list-disc list-inside text-slate-600 dark:text-slate-300 mt-1 space-y-1">
+                                    <li>Merancang platform LMS pembelajaran siklus akuntansi interaktif.</li>
+                                    <li>Mengembangkan instrumen pengujian otomatis debit-kredit dan laporan keuangan.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between font-bold text-slate-800 dark:text-slate-200">
+                                    <span>Financial Statement Auditor Assistant</span>
+                                    <span class="text-slate-400 font-normal">2022 - 2023</span>
+                                </div>
+                                <p class="text-slate-500 dark:text-slate-400 text-[11px]">Kantor Akuntan Publik (KAP)</p>
+                                <ul class="list-disc list-inside text-slate-600 dark:text-slate-300 mt-1 space-y-1">
+                                    <li>Melakukan pengujian substantif atas saldo kas, piutang, dan persediaan.</li>
+                                    <li>Menyusun draft laporan auditor independen dan analisis rasio keuangan klien.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Matrix -->
+                    <div class="space-y-3">
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white border-l-4 border-electric-500 pl-3">Keahlian & Sertifikasi</h3>
+                        <div class="grid sm:grid-cols-2 gap-3 text-xs">
+                            <div><strong>Akuntansi & Audit:</strong> PSAK / IFRS, Cost Accounting, Working Papers.</div>
+                            <div><strong>Perpajakan:</strong> Brevet A & B, e-SPT, PPh 21/23/PPN.</div>
+                            <div><strong>Software & Tools:</strong> Excel Financial Modeling, Power Query, Accurate/MYOB.</div>
+                            <div><strong>Edukasi Digital:</strong> Interactive LKPD, Gamification, Assessment Design.</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===== SECTION 8: CONTACT ME ===== -->
+        <section id="contact" class="py-20 bg-slate-100/60 dark:bg-navy-900/40 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-electric-600 dark:text-electric-400 mb-2">Kontak & Diskusi</h2>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                        Mari Berdiskusi & Berkolaborasi
+                    </h3>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                        Kirimkan pesan untuk konsultasi pelaporan keuangan, proyek pengembangan LMS, atau undangan seminar akademik.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-10">
+                    
+                    <!-- Left: Contact Details -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="glass-card p-6 rounded-3xl space-y-6">
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white">Informasi Kontak Direct</h4>
+                            
+                            <div class="space-y-4 text-xs">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-navy-800 text-electric-600 dark:text-electric-400 flex items-center justify-center text-base shrink-0">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-slate-400 block text-[10px]">Email Profesional</span>
+                                        <a id="contact-disp-email" href="mailto:pratama.yoga@accounting.id" class="font-bold text-slate-800 dark:text-slate-200 hover:text-electric-500">pratama.yoga@accounting.id</a>
+                                    </div>
+                                    <button onclick="copyToClipboard('pratama.yoga@accounting.id')" class="ml-auto p-2 text-slate-400 hover:text-electric-500" title="Salin Email">
+                                        <i class="fa-solid fa-copy"></i>
+                                    </button>
+                                </div>
+
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-navy-800 text-electric-600 dark:text-electric-400 flex items-center justify-center text-base shrink-0">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-slate-400 block text-[10px]">LinkedIn</span>
+                                        <a id="contact-disp-linkedin" href="https://linkedin.com" target="_blank" class="font-bold text-slate-800 dark:text-slate-200 hover:text-electric-500">linkedin.com/in/pratamayoga-ak</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-navy-800 text-electric-600 dark:text-electric-400 flex items-center justify-center text-base shrink-0">
+                                        <i class="fa-brands fa-github"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-slate-400 block text-[10px]">GitHub Repository</span>
+                                        <a id="contact-disp-github" href="https://github.com" target="_blank" class="font-bold text-slate-800 dark:text-slate-200 hover:text-electric-500">github.com/pratamayoga</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Form -->
+                    <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl">
+                        <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Nama Lengkap *</label>
+                                    <input type="text" id="form-name" required placeholder="Nama Anda" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:border-electric-500">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Email Anda *</label>
+                                    <input type="email" id="form-email" required placeholder="nama@email.com" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:border-electric-500">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Subjek Diskusikan *</label>
+                                <input type="text" id="form-subject" required placeholder="Contoh: Konsultasi Sistem Keuangan / LMS" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:border-electric-500">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Pesan *</label>
+                                <textarea id="form-message" rows="4" required placeholder="Tuliskan detail pesan Anda..." class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:border-electric-500 resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 rounded-xl bg-electric-600 hover:bg-electric-500 text-white font-semibold text-xs transition shadow-md flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Kirim Pesan</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-navy-800 text-xs no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-electric-600 text-white flex items-center justify-center font-bold text-xs">
+                    AP
+                </div>
+                <span><strong id="footer-disp-name">Pratama Yoga, S.Ak.</strong> — Professional Accounting & Educational Media</span>
+            </div>
+
+            <div class="text-center sm:text-right text-[11px] text-slate-500">
+                &copy; <span id="current-year"></span> All Rights Reserved. Built for GitHub Pages.
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ================= MODALS & OVERLAYS ================= -->
+
+    <!-- LIVE PROFILE CUSTOMIZER MODAL -->
+    <div id="profile-modal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="glass-card max-w-lg w-full rounded-3xl p-6 sm:p-8 relative space-y-4">
+            <button onclick="closeProfileModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-200 text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex items-center gap-2 border-b border-slate-200 dark:border-navy-800 pb-3">
+                <i class="fa-solid fa-user-pen text-electric-500 text-lg"></i>
+                <h3 class="font-bold text-base text-slate-900 dark:text-white">Customizer Data Profil</h3>
+            </div>
+
+            <form onsubmit="saveProfileCustomizer(event)" class="space-y-3 text-xs">
+                <div>
+                    <label class="block font-semibold mb-1">Nama Lengkap & Gelar</label>
+                    <input type="text" id="cust-name" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 text-slate-800 dark:text-slate-100">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-1">Profesi / Title</label>
+                    <input type="text" id="cust-title" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 text-slate-800 dark:text-slate-100">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-1">Tagline Personal</label>
+                    <input type="text" id="cust-tagline" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 text-slate-800 dark:text-slate-100">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-1">Lokasi</label>
+                    <input type="text" id="cust-location" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 text-slate-800 dark:text-slate-100">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-1">Deskripsi Ringkas (Bio)</label>
+                    <textarea id="cust-bio" rows="3" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 text-slate-800 dark:text-slate-100 resize-none"></textarea>
+                </div>
+                <div>
+                    <label class="block font-semibold mb-1">Email</label>
+                    <input type="email" id="cust-email" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-navy-800 text-slate-800 dark:text-slate-100">
+                </div>
+
+                <div class="pt-2 flex justify-end gap-2">
+                    <button type="button" onclick="closeProfileModal()" class="px-4 py-2 rounded-xl bg-slate-200 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-semibold">Batal</button>
+                    <button type="submit" class="px-4 py-2 rounded-xl bg-electric-600 text-white font-semibold">Simpan Perubahan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div id="project-modal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="glass-card max-w-2xl w-full rounded-3xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto space-y-4 relative">
+            <button onclick="closeProjectModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-200 text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modal-project-content" class="space-y-4"></div>
+        </div>
+    </div>
+
+    <!-- CERTIFICATE PREVIEW MODAL -->
+    <div id="cert-modal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="glass-card max-w-md w-full rounded-3xl p-6 relative space-y-4 text-center">
+            <button onclick="closeCertModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-200 text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="w-16 h-16 rounded-2xl bg-blue-100 dark:bg-navy-800 text-electric-500 flex items-center justify-center text-2xl mx-auto">
+                <i class="fa-solid fa-certificate"></i>
+            </div>
+            <h4 id="cert-title" class="font-bold text-base text-slate-900 dark:text-white"></h4>
+            <p id="cert-organizer" class="text-xs text-electric-600 dark:text-electric-400 font-semibold"></p>
+            <p id="cert-desc" class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed"></p>
+            <button onclick="closeCertModal()" class="w-full py-2.5 rounded-xl bg-electric-600 text-white text-xs font-semibold">Tutup</button>
+        </div>
+    </div>
+
+    <!-- FLOATING BACK TO TOP BUTTON -->
+    <button id="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'})" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-electric-600 text-white shadow-xl flex items-center justify-center text-sm opacity-0 pointer-events-none transition duration-300 z-40 hover:scale-110">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast-container" class="fixed top-24 right-5 z-50 space-y-2 pointer-events-none"></div>
+
+
+    <!-- ================= JAVASCRIPT LOGIC ================= -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Theme Switcher Logic with LocalStorage Persistence
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const htmlElement = document.documentElement;
+
+        function applyTheme(isDark) {
+            if (isDark) {
+                htmlElement.classList.add('dark');
+                themeIcon.className = 'fa-solid fa-sun text-amber-400';
+            } else {
+                htmlElement.classList.remove('dark');
+                themeIcon.className = 'fa-solid fa-moon text-slate-700';
+            }
+        }
+
+        const savedTheme = localStorage.getItem('ap_theme');
+        applyTheme(savedTheme ? savedTheme === 'dark' : true);
+
+        themeToggleBtn.addEventListener('click', () => {
+            const isDark = !htmlElement.classList.contains('dark');
+            applyTheme(isDark);
+            localStorage.setItem('ap_theme', isDark ? 'dark' : 'light');
+            showToast(isDark ? 'Mode Gelap Aktif' : 'Mode Terang Aktif');
+        });
+
+        // Mobile Nav Drawer Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-drawer').classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-nav-item').forEach(i => {
+            i.addEventListener('click', () => document.getElementById('mobile-drawer').classList.add('hidden'));
+        });
+
+        // Back to top scroll button observer
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('back-to-top');
+            if (window.scrollY > 400) {
+                btn.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                btn.classList.add('opacity-0', 'pointer-events-none');
+            }
+        });
+
+        // Custom Toast Notification System
+        function showToast(msg) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = 'bg-electric-600 text-white text-xs px-4 py-3 rounded-2xl shadow-xl flex items-center gap-2 pointer-events-auto transition duration-300';
+            toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> <span>${msg}</span>`;
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.classList.add('opacity-0');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // Clipboard Copy Helper
+        function copyToClipboard(text) {
+            const temp = document.createElement('input');
+            temp.value = text;
+            document.body.appendChild(temp);
+            temp.select();
+            document.execCommand('copy');
+            document.body.removeChild(temp);
+            showToast('Email berhasil disalin!');
+        }
+
+        // Live Profile Customizer State Management
+        const defaultProfile = {
+            name: "Pratama Yoga, S.Ak.",
+            title: "Professional Accountant & Financial Educator",
+            tagline: '"Precision Accounting, Financial Strategy, and Digital Learning Innovation"',
+            location: "Yogyakarta, Indonesia",
+            bio: "Praktisi dan edukator akuntansi dengan spesialisasi pada pelaporan keuangan berbasis PSAK/IFRS, perpajakan, audit internal, serta perancangan media dan LMS digital interaktif untuk pendidikan kejuruan dan profesional.",
+            email: "pratama.yoga@accounting.id",
+            linkedin: "linkedin.com/in/pratamayoga-ak",
+            github: "github.com/pratamayoga"
+        };
+
+        function getProfileData() {
+            const saved = localStorage.getItem('ap_profile_data');
+            return saved ? JSON.parse(saved) : defaultProfile;
+        }
+
+        function updateDOMProfile() {
+            const data = getProfileData();
+            document.getElementById('disp-name').textContent = data.name;
+            document.getElementById('cv-disp-name').textContent = data.name;
+            document.getElementById('footer-disp-name').textContent = data.name;
+
+            document.getElementById('disp-title').textContent = data.title;
+            document.getElementById('cv-disp-title').textContent = data.title;
+
+            document.getElementById('disp-tagline').textContent = data.tagline;
+            document.getElementById('disp-bio').textContent = data.bio;
+
+            document.getElementById('disp-location').textContent = data.location;
+            document.getElementById('cv-disp-location').textContent = data.location;
+
+            document.getElementById('cv-disp-email').textContent = data.email;
+            document.getElementById('contact-disp-email').textContent = data.email;
+            document.getElementById('contact-disp-email').href = `mailto:${data.email}`;
+        }
+
+        function openProfileModal() {
+            const data = getProfileData();
+            document.getElementById('cust-name').value = data.name;
+            document.getElementById('cust-title').value = data.title;
+            document.getElementById('cust-tagline').value = data.tagline;
+            document.getElementById('cust-location').value = data.location;
+            document.getElementById('cust-bio').value = data.bio;
+            document.getElementById('cust-email').value = data.email;
+
+            document.getElementById('profile-modal').classList.remove('hidden');
+            document.getElementById('profile-modal').classList.add('flex');
+        }
+
+        function closeProfileModal() {
+            document.getElementById('profile-modal').classList.add('hidden');
+            document.getElementById('profile-modal').classList.remove('flex');
+        }
+
+        function saveProfileCustomizer(e) {
+            e.preventDefault();
+            const updated = {
+                name: document.getElementById('cust-name').value,
+                title: document.getElementById('cust-title').value,
+                tagline: document.getElementById('cust-tagline').value,
+                location: document.getElementById('cust-location').value,
+                bio: document.getElementById('cust-bio').value,
+                email: document.getElementById('cust-email').value,
+            };
+            localStorage.setItem('ap_profile_data', JSON.stringify(updated));
+            updateDOMProfile();
+            closeProfileModal();
+            showToast('Data Profil berhasil diperbarui!');
+        }
+
+        // Projects Dataset
+        const projectsData = [
+            {
+                id: 'proj-1',
+                title: 'Integrated Financial Reporting System (PSAK Compliant)',
+                category: 'Financial Accounting',
+                additionalCat: ['Systems & Spreadsheets'],
+                status: 'Completed System',
+                summary: 'Otomasi siklus akuntansi terintegrasi dari buku jurnal hingga 5 laporan keuangan utama berbasis standar PSAK.',
+                role: 'Financial System Developer',
+                tech: ['Excel Power Query', 'PSAK Standards', 'VBA/Macro'],
+                desc: 'Sistem laporan keuangan otomatis yang menggabungkan penginputan jurnal terstruktur dengan lembar kerja neraca lajur dan otomasi Laba Rugi, Posisi Keuangan, Arus Kas, Perubahan Ekuitas, serta CaLK.'
+            },
+            {
+                id: 'proj-2',
+                title: 'Corporate Tax Compliance & Reconciliation Dashboard',
+                category: 'Audit & Tax',
+                additionalCat: ['Systems & Spreadsheets'],
+                status: 'Verified Project',
+                summary: 'Dasbor rekonsiliasi fiskal dan pemetaan kepatuhan PPh Badan, PPh 21/23, serta PPN masukan/keluaran.',
+                role: 'Tax Specialist',
+                tech: ['e-SPT Mapping', 'Tax Reconciliation', 'Excel Dashboard'],
+                desc: 'Alat bantu analisis perpajakan perusahaan yang mengidentifikasi koreksi positif/negatif fiskal secara rinci dan mempermudah pengisian SPT Tahunan Badan.'
+            },
+            {
+                id: 'proj-3',
+                title: 'AKUN LMS: Digital Learning Management System',
+                category: 'Digital Learning Media',
+                additionalCat: ['Academic & Research'],
+                status: 'Active LMS Platform',
+                summary: 'Platform LMS interaktif khusus pembelajaran praktikum akuntansi SMK dan mahasiswa tingkat awal.',
+                role: 'Lead Content & UI/UX Developer',
+                tech: ['HTML/Tailwind', 'Interactive Accounting Logic', 'LMS Modules'],
+                desc: 'Platform LMS inovatif yang menyediakan modul interaktif, latihan koreksi saldo otomatis, kuis gamifikasi, dan pelacakan kemajuan siswa dalam menguasai siklus akuntansi.'
+            },
+            {
+                id: 'proj-4',
+                title: 'Interactive Financial Statement Modeling Tool',
+                category: 'Systems & Spreadsheets',
+                additionalCat: ['Financial Accounting'],
+                status: 'Template Release',
+                summary: 'Model proyeksi laporan keuangan 3-statement dengan analisis sensitivitas dan rasio likuiditas/profitabilitas.',
+                role: 'Financial Analyst',
+                tech: ['Financial Modeling', 'Google Sheets Script', 'Scenario Analysis'],
+                desc: 'Model keuangan interaktif untuk simulasi proyeksi arus kas, penganggaran operasional, serta analisis titik impas (BEP) bagi pemilik usaha dan praktisi.'
+            },
+            {
+                id: 'proj-5',
+                title: 'Audit Trail & Internal Control Assessment Framework',
+                category: 'Audit & Tax',
+                additionalCat: ['Financial Accounting'],
+                status: 'Audit Framework',
+                summary: 'Matriks evaluasi kriteria pengendalian internal dan kertas kerja pengujian audit substantif UMKM.',
+                role: 'Auditor Assistant',
+                tech: ['Working Papers (KKA)', 'Internal Control Matrix', 'Risk Assessment'],
+                desc: 'Framework pengujian transaksi untuk mengidentifikasi potensi deviasi dalam pencatatan persediaan, penerimaan kas, dan otorisasi pengeluaran dana.'
+            },
+            {
+                id: 'proj-6',
+                title: 'Research on Digital Accounting Competencies Gap',
+                category: 'Academic & Research',
+                additionalCat: ['Digital Learning Media'],
+                status: 'Academic Publication',
+                summary: 'Kajian riset kesenjangan antara kompetensi akuntansi digital kurikulum kejuruan dengan standar industri 4.0.',
+                role: 'Principal Researcher',
+                tech: ['Mixed-Methods', 'Data Analytics', 'Academic Writing'],
+                desc: 'Artikel ilmiah yang mengkaji efektivitas integrasi software akuntansi cloud dan keterampilan analisis spreadsheet dalam menyiapkan lulusan akuntansi yang siap kerja.'
+            }
+        ];
+
+        function renderProjects(filter = 'all') {
+            const grid = document.getElementById('projects-grid');
+            grid.innerHTML = '';
+
+            const filtered = projectsData.filter(p => {
+                if (filter === 'all') return true;
+                return p.category === filter || (p.additionalCat && p.additionalCat.includes(filter));
+            });
+
+            filtered.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'glass-card rounded-3xl p-6 flex flex-col justify-between hover:border-electric-500/60 transition group';
+
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-2.5 py-1 rounded text-[10px] font-bold bg-blue-100 dark:bg-navy-800 text-electric-600 dark:text-electric-400">
+                                ${p.category}
+                            </span>
+                            <span class="px-2 py-0.5 rounded text-[9px] font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                                ${p.status}
+                            </span>
+                        </div>
+
+                        <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2 group-hover:text-electric-500 transition">
+                            ${p.title}
+                        </h4>
+
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 leading-relaxed">
+                            ${p.summary}
+                        </p>
+
+                        <div class="flex flex-wrap gap-1.5 mb-6">
+                            ${p.tech.map(t => `<span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-navy-900 text-[10px] text-slate-600 dark:text-slate-300">${t}</span>`).join('')}
+                        </div>
+                    </div>
+
+                    <button onclick="openProjectModal('${p.id}')" class="w-full py-2.5 rounded-xl bg-slate-200/80 dark:bg-navy-800 hover:bg-electric-600 hover:text-white text-xs font-semibold text-slate-800 dark:text-slate-200 transition text-center flex items-center justify-center gap-2">
+                        <span>Lihat Detail Proyek</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        document.querySelectorAll('.portfolio-filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.portfolio-filter-btn').forEach(b => {
+                    b.classList.remove('bg-electric-600', 'text-white');
+                    b.classList.add('bg-slate-200/80', 'dark:bg-navy-800', 'text-slate-700', 'dark:text-slate-300');
+                });
+
+                e.target.classList.remove('bg-slate-200/80', 'dark:bg-navy-800', 'text-slate-700', 'dark:text-slate-300');
+                e.target.classList.add('bg-electric-600', 'text-white');
+
+                renderProjects(e.target.getAttribute('data-filter'));
+            });
+        });
+
+        function openProjectModal(id) {
+            const project = projectsData.find(p => p.id === id);
+            if (!project) return;
+
+            const content = document.getElementById('modal-project-content');
+            content.innerHTML = `
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="px-2.5 py-1 rounded text-[10px] font-bold bg-blue-100 dark:bg-navy-800 text-electric-500">
+                        ${project.category}
+                    </span>
+                    <span class="px-2 py-1 rounded text-[10px] font-semibold bg-emerald-500/10 text-emerald-500">
+                        ${project.status}
+                    </span>
+                </div>
+
+                <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">${project.title}</h3>
+
+                <div class="p-3 bg-slate-100 dark:bg-navy-900 rounded-xl text-xs space-y-1">
+                    <div><strong>Peran Utama:</strong> ${project.role}</div>
+                    <div><strong>Teknologi:</strong> ${project.tech.join(', ')}</div>
+                </div>
+
+                <div class="space-y-2">
+                    <h5 class="text-xs font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wider">Rincian Implementasi:</h5>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">${project.desc}</p>
+                </div>
+            `;
+
+            document.getElementById('project-modal').classList.remove('hidden');
+            document.getElementById('project-modal').classList.add('flex');
+        }
+
+        function closeProjectModal() {
+            document.getElementById('project-modal').classList.add('hidden');
+            document.getElementById('project-modal').classList.remove('flex');
+        }
+
+        function openCertModal(title, org, date, desc) {
+            document.getElementById('cert-title').textContent = title;
+            document.getElementById('cert-organizer').textContent = `${org} (${date})`;
+            document.getElementById('cert-desc').textContent = desc;
+
+            document.getElementById('cert-modal').classList.remove('hidden');
+            document.getElementById('cert-modal').classList.add('flex');
+        }
+
+        function closeCertModal() {
+            document.getElementById('cert-modal').classList.add('hidden');
+            document.getElementById('cert-modal').classList.remove('flex');
+        }
+
+        // Articles Dataset
+        const articles = [
+            {
+                title: 'Transisi Dampak PSAK ke IFRS pada Modul Pembelajaran Keuangan',
+                category: 'Akuntansi Keuangan',
+                date: 'Nov 2023',
+                summary: 'Analisis mengenai penyesuaian penyajian laporan keuangan komersial dan tantangan pengajarannya bagi mahasiswa.',
+                fullText: 'Penerapan konvergensi standar akuntansi memerlukan penyesuaian materi pembelajaran, khususnya pada penilaian instrumen keuangan dan pengakuan pendapatan...'
+            },
+            {
+                title: 'Pemanfaatan AI dan Automasi dalam Audit Internal Modern',
+                category: 'Audit & Tech',
+                date: 'Okt 2023',
+                summary: 'Bagaimana kecerdasan buatan membantu deteksi anomali jurnal umum dan efisiensi sampling transaksi.',
+                fullText: 'Teknologi AI kini mampu menganalisis 100% populasi data transaksi keuangan daripada sekadar teknik sampling tradisional, meningkatkan kualitas temuan audit...'
+            },
+            {
+                title: 'Desain LKPD Digital Berbasis Gamifikasi untuk Siklus Akuntansi',
+                category: 'Edukasi Digital',
+                date: 'Agu 2023',
+                summary: 'Studi efektivitas elemen poin dan feedback instan dalam meningkatkan ketelitian debit-kredit siswa SMK.',
+                fullText: 'Siswa menunjukkan peningkatan retensi pemahaman materi jurnal sebesar 35% ketika menggunakan lembar kerja interaktif yang memberikan umpan balik koreksi saldo instan...'
+            }
+        ];
+
+        function renderArticles(filterText = '') {
+            const container = document.getElementById('articles-container');
+            container.innerHTML = '';
+
+            const filtered = articles.filter(a => 
+                a.title.toLowerCase().includes(filterText.toLowerCase()) || 
+                a.summary.toLowerCase().includes(filterText.toLowerCase())
+            );
+
+            filtered.forEach(a => {
+                const card = document.createElement('div');
+                card.className = 'glass-card rounded-3xl p-6 flex flex-col justify-between hover:border-electric-500/50 transition';
+
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] text-slate-400 mb-3">
+                            <span class="px-2 py-0.5 rounded font-bold bg-blue-100 dark:bg-navy-800 text-electric-500">${a.category}</span>
+                            <span>${a.date}</span>
+                        </div>
+                        <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2 leading-snug">${a.title}</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">${a.summary}</p>
+                    </div>
+
+                    <button onclick="openCertModal('${a.title}', 'Publikasi Artikel Akademik', '${a.date}', '${a.fullText}')" class="text-left text-xs font-semibold text-electric-600 dark:text-electric-400 hover:underline flex items-center gap-1">
+                        <span>Baca Artikel</span>
+                        <i class="fa-solid fa-angle-right text-[10px]"></i>
+                    </button>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        document.getElementById('article-search').addEventListener('input', (e) => {
+            renderArticles(e.target.value);
+        });
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('form-name').value;
+            showToast(`Terima kasih, ${name}! Pesan Anda berhasil terkirim.`);
+            document.getElementById('contact-form').reset();
+        }
+
+        // Global Modal Backdrop Dismiss
+        window.onclick = function(e) {
+            if (e.target === document.getElementById('project-modal')) closeProjectModal();
+            if (e.target === document.getElementById('cert-modal')) closeCertModal();
+            if (e.target === document.getElementById('profile-modal')) closeProfileModal();
+        }
+
+        // Initialize App
+        window.onload = function() {
+            updateDOMProfile();
+            renderProjects('all');
+            renderArticles('');
+        };
+    </script>
+</body>
+</html>
